@@ -49,3 +49,12 @@
 
 }
 
+
+@media screen and (max-width: 600px) {
+  .cards{
+    img{
+      width: 300px;
+      height: 200px;
+    }
+  }
+}

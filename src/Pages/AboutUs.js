@@ -9,8 +9,8 @@ const AboutUs = () => {
         <div className="header fs-1 text-dark">
           Are you searching a holiday?
         </div>
-        <div className="about-body h-75 fs-4 bg-secondary text-light p-3 rounded-5">
-          <span className="header fs-1">Hello and welcome to <span className="text-warning">Vacation Center!</span></span>
+        <div className="about-body my-3 h-75 fs-4 bg-secondary text-light p-3 rounded-5">
+          <div className="m-3"><span className="fs-1">Hello and welcome to <span className="text-warning">Vacation Center!</span></span></div>
           <p className="container p-4">
             Vacation Center guided tours come with <span className="text-warning">airfare from more than 100
             conveniently placed locations</span> across the globe, first-rate lodging,
