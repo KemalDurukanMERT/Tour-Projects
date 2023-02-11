@@ -3,7 +3,7 @@ import './Header.scss';
 const Header = () => {
     return(
         <div className="header">
-            <h1>Popular Tour Places</h1>
+            <h1 className='fs-1 fw-bolder'>Popular Tour Places</h1>
         </div>
     )
 }

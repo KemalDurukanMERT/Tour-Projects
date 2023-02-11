@@ -7,10 +7,44 @@
 body{
     background-color: $backgroundColor;
     font-family: 'Amatic SC', cursive;
+    height: 100%;
 
 }
 
 p{
     font-family: 'Hubballi', cursive;
+}
 
+.services, .contact{
+    position: relative;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    img{
+        position: absolute;
+        max-width: 100%;
+        min-height: 100%;
+        object-fit: contain;
+        z-index: -1;
+    }
+
+    .services-header, .contact-header{
+        margin-top: 3rem;
+        background-color: rgba(16, 19, 184, 0.5);
+        border-radius: 20px;
+        padding: 0 2rem;
+    }
+
+    .services-body, .contact-body{
+        background-color: rgba(105, 105, 105, 0.801);
+        margin-bottom: 2rem;
+    }
+
+    .clicked{
+        cursor: pointer;
+        background-color: rgba(206, 17, 17, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items : center;
+    }
 }

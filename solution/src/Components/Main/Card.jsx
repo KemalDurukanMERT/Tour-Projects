@@ -1,5 +1,5 @@
 const Card = (data) => {
-    console.log('ne geliyo', data)
+    // console.log('ne geliyo', data)
     const {title, image, desc} = data;
     return (
         <div className="cards">

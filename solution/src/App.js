@@ -1,16 +1,21 @@
-import './App.scss';
-import Header from './Components/Header/Header';
-import Main from './Components/Main/Main';
-import Navbar from './Components/Navbar/Navbar';
+import "./App.scss";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Main from "./Pages/Main";
+import AboutUs from "./Pages/AboutUs";
+import Services from "./Pages/Services";
+import Contact from "./Pages/Contact";
 
 const App = () => {
-  return(
-    <div className="App">
-      <Navbar/>
-      <Header/>
-      <Main/>
-    </div>
-  )
-}
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index path="/" element={<Main />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;

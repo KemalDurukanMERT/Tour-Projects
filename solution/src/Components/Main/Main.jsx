@@ -3,8 +3,8 @@ import './Main.scss';
 import {data} from '../../Helper/data';
 import Card from './Card';
 
-const Main = () => {
-    console.log(data);
+const MainComponent = () => {
+    // console.log(data);
 
     return(
         <div className="card-container">
@@ -14,4 +14,4 @@ const Main = () => {
 }
 
 
-export default Main;
+export default MainComponent;
