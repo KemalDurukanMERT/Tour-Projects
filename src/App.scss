@@ -49,3 +49,17 @@ p{
         align-items : center;
     }
 }
+
+.services{
+    .clicked{
+        padding:2rem;
+        border-radius: 1rem;
+    }
+}
+
+.contact{
+    .clicked{
+        padding: 0.8rem 2rem;
+        border-radius: 1rem;
+    }
+}

@@ -24,7 +24,7 @@ const Contact = () => {
             : map
             ? maps
             : !(map || phone || mail)
-            ? ""
+            ? mails
             : ""
         }
         alt=""
@@ -39,7 +39,7 @@ const Contact = () => {
           </span>
           <div className="services-tab d-flex flex-column justify-content-center align-items-center gap-3 fs-1 header">
             <div
-              className="clicked py-2 px-3 rounded-4"
+              className={mail ? "clicked bg-success" : !(mail||phone||map) ? "clicked bg-warning" : "clicked"}
               onClick={() => {
                 setMail(true);
                 setPhone(false);
@@ -50,7 +50,7 @@ const Contact = () => {
               <p className="fs-3 mx-3 text-dark mb-0">vacationcenter@holiday.mail.com</p>
             </div>
             <div
-              className="clicked py-2 px-3 rounded-4"
+              className={phone ? "clicked bg-success" : "clicked"}
               onClick={() => {
                 setPhone(true);
                 setMail(false);
@@ -63,7 +63,7 @@ const Contact = () => {
               <p className="fs-3 mx-3 text-dark mb-0">+(123) 456 789</p>
             </div>
             <div
-              className="clicked py-2 px-3 rounded-4"
+              className={map ? "clicked bg-success" : "clicked"}
               onClick={() => {
                 setMap(true);
                 setMail(false);

@@ -15,15 +15,6 @@ const Services = () => {
     <div
       id="services"
       className="services "
-      // style={
-      //   hotel
-      //     ? { background: `url(${hotels})`, backgroundSize: "100vw 100vh", backgroundRepeat:"no-repeat"  }
-      //     : meal
-      //     ? { background: `url(${meals})`, backgroundSize: "100vw 100vh", backgroundRepeat:"no-repeat" }
-      //     : plane
-      //     ? { background: `url(${planes})`, backgroundSize: "100vw 100vh", backgroundRepeat:"no-repeat" }
-      //     : {}
-      // }
     >
       <Navbar />
       <img className="img1"
@@ -35,7 +26,7 @@ const Services = () => {
             : plane
             ? planes 
             : !(meal || hotel || plane)
-            ? ""
+            ? meals
             : ""
         }
         alt=""
@@ -50,7 +41,7 @@ const Services = () => {
           </span>
           <div className="services-tab d-flex justify-content-center gap-3 fs-1 header">
             <div
-              className="clicked p-5 rounded-5"
+              className={meal ? "clicked bg-success" : !(meal||hotel||plane) ? "clicked bg-warning" : "clicked"}
               onClick={() => {
                 setMeal(true);
                 setHotel(false);
@@ -60,7 +51,7 @@ const Services = () => {
               <GiMeal />
             </div>
             <div
-              className="clicked p-5 rounded-5"
+              className={hotel ? "clicked bg-success" : "clicked"}
               onClick={() => {
                 setHotel(true);
                 setMeal(false);
@@ -70,7 +61,7 @@ const Services = () => {
               <FaHotel />
             </div>
             <div
-              className="clicked p-5 rounded-5"
+              className={plane ? "clicked bg-success" : "clicked"}
               onClick={() => {
                 setPlane(true);
                 setMeal(false);
