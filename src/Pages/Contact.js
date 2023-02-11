@@ -15,7 +15,7 @@ const Contact = () => {
   return (
     <div id="contact" className="contact">
       <Navbar />
-      <img
+      <img className="img1"
         src={
           mail
             ? mails

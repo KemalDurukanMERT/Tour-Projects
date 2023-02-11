@@ -12,9 +12,21 @@ const Services = () => {
   const [hotel, setHotel] = useState(false);
   const [plane, setPlane] = useState(false);
   return (
-    <div id="services" className="services">
+    <div
+      id="services"
+      className="services "
+      // style={
+      //   hotel
+      //     ? { background: `url(${hotels})`, backgroundSize: "100vw 100vh", backgroundRepeat:"no-repeat"  }
+      //     : meal
+      //     ? { background: `url(${meals})`, backgroundSize: "100vw 100vh", backgroundRepeat:"no-repeat" }
+      //     : plane
+      //     ? { background: `url(${planes})`, backgroundSize: "100vw 100vh", backgroundRepeat:"no-repeat" }
+      //     : {}
+      // }
+    >
       <Navbar />
-      <img
+      <img className="img1"
         src={
           hotel
             ? hotels 
