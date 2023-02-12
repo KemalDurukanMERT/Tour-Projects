@@ -34,8 +34,8 @@ const Services = () => {
 
       <div className="services-main fw-bolder d-flex flex-column align-items-center">
         <div className="services-header header fs-1 text-white">SERVICES</div>
-        <div className="services-body h-75 fs-4 text-light p-3 rounded-5">
-          <span className="mx-3 fs-1">
+        <div className="services-body h-75 fs-4 text-light p-3 rounded-5 text-center">
+          <span className="fs-1">
             <span className="text-warning">Everything </span>You're Looking For
             Is Here
           </span>

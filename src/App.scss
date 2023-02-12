@@ -7,29 +7,38 @@
 body{
     background-color: $backgroundColor;
     font-family: 'Amatic SC', cursive;
-    height: 100%;
-    position: relative;
+    height: 100vh;
+    // position: relative;
 }
 
 p{
     font-family: 'Hubballi', cursive;
 }
 
-.services, .contact{
-    height:100vh;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: relative;
+
+#services, #contact{
+    width: 100%;
+    height: 100vh;
+    border: 3px solid red;
+    position: absolute;
     .img1{
         position:absolute;
-        top:10%;
+        // top:10%;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         object-fit: cover;
         z-index: -4;
     }
+}
+.services, .contact{
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    // position: relative;
+    // border: 3px solid red;
+    
 
     .services-header, .contact-header{
         margin-top: 3rem;
@@ -41,7 +50,7 @@ p{
     .services-body, .contact-body{
         max-width: 100%;
         background-color: rgba(105, 105, 105, 0.801);
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
     }
 
     .clicked{
@@ -69,16 +78,16 @@ p{
     }
 }
 
-@media screen and (max-width:600px){
-    .contact-body{
-        padding: 0;
-        margin: 0;
-    }
-
-    .contact-body{
-        .clicked{
-            margin: 0;
+@media screen and (max-width: 600px) {
+    .contact{
+        .contact-header{
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
         }
 
+        .contact-body{
+            padding-top: 0.5rem;
+            padding-bottom:1rem ;
+        }
     }
-}
+  }
