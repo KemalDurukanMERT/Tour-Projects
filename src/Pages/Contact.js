@@ -34,7 +34,7 @@ const Contact = () => {
       <div className="contact-main fw-bolder d-flex flex-column align-items-center">
         <div className="contact-header header fs-1 text-white">Contact</div>
         <div className="contact-body h-75 fs-4 text-light rounded-5 text-center">
-          <span className="fs-1 border">
+          <span className="fs-1">
             <span className="text-warning">Whenever </span>You Want, We are
             Here.
           </span>
